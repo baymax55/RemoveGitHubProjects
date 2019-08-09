@@ -44,15 +44,22 @@ public class SeleniumDeleter extends Deleter {
 		String urlPrefix = "https://github.com/" + userInfo.getUserName() + "/";
 		
 		webDriver.get(urlPrefix + projectName + "/settings");
-		
-		WebElement deleteButton = webDriver.findElement(By.xpath("//button[@data-facebox='#delete_repo_confirm']"));
+
+		String xPath="//*[@id=\"options_bucket\"]/div[8]/ul/li[4]/details/summary";
+		WebElement deleteButton = webDriver.findElement(By.xpath(xPath));
+
 		deleteButton.click();
 		
 		List<WebElement> verifys = webDriver.findElements(By.name("verify"));
 		verifys.get(verifys.size() - 1).sendKeys(projectName);
-		
-		WebElement confirmCommit = webDriver.findElements(By.xpath("//button[text()='I understand the consequences, delete this repository']")).get(1);
-		confirmCommit.click();
+
+		String deleteConfirm="//*[@id=\"options_bucket\"]/div[8]/ul/li[4]/details/details-dialog/div[3]/form/button";
+		WebElement deleteButtonConfirm = webDriver.findElement(By.xpath(deleteConfirm));
+
+		deleteButtonConfirm.click();
+
+//		WebElement confirmCommit = webDriver.findElements(By.xpath("//button[text()='I understand the consequences, delete this repository']")).get(1);
+//		confirmCommit.click();
 		return true;
 	}
 

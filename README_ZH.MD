@@ -1,8 +1,10 @@
 # 批量删除github上的项目1
 
 ## 项目源起
+
 之前在github上fork了很多项目，最后打算整理下自己的github账号项目，
-在github上找到一个deletegithubproject(https://github.com/l294265421/deletegithubproject)项目，发现有些问题。本项目在此基础上加以完善，方便使用。
+在github上找到一个 [deletegithubproject](https://github.com/l294265421/deletegithubproject)
+项目，发现有些问题。本项目在此基础上加以完善，方便使用。
 
 ## 使用方法
 1. 先配置conf目录下的project_name和user_info.properites文件，project_name文件里放入要删除的项目名称，一行一个；user_info.properites文件配置github登陆名、密码和用户名。

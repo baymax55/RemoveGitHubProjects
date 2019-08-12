@@ -11,6 +11,6 @@
 2. 运行com.liyuncong.application.deletegithubproject.main.Main文件
 
 ## 注意
-1. 测试SeleniumDeleter使用的chrome浏览器版本为75.0.3770.140(需要和当前使用的chrome版本一致)。chrome driver 历史版本地址(http://chromedriver.chromium.org/downloads)
+1. 测试SeleniumDeleter使用的chrome浏览器版本为75.0.3770.140(需要和当前使用的chrome版本一致)。[chrome driver 历史版本地址](http://chromedriver.chromium.org/downloads)
 2. 只支持windows操作系统
 3. 修改删除按钮和确认删除按钮的xPath
